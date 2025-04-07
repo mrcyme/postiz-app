@@ -23,7 +23,7 @@ import { AgentModule } from '@gitroom/nestjs-libraries/agent/agent.module';
     ThrottlerModule.forRoot([
       {
         ttl: 3600000,
-        limit: 30,
+        limit: 30000,
       },
     ]),
   ],

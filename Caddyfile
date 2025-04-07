@@ -1,0 +1,4 @@
+postiz.example.lan {
+        reverse_proxy * localhost:5000
+        tls internal
+}

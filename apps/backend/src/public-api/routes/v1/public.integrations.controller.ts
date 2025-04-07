@@ -23,7 +23,7 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import { UploadFactory } from '@gitroom/nestjs-libraries/upload/upload.factory';
 import { MediaService } from '@gitroom/nestjs-libraries/database/prisma/media/media.service';
 import { GetPostsDto } from '@gitroom/nestjs-libraries/dtos/posts/get.posts.dto';
-
+import { Logger, ValidationPipe } from '@nestjs/common';
 @ApiTags('Public API')
 @Controller('/public/v1')
 export class PublicIntegrationsController {
@@ -42,7 +42,7 @@ export class PublicIntegrationsController {
     @UploadedFile('file') file: Express.Multer.File
   ) {
     if (!file) {
-      throw new HttpException({ msg: 'No file provided' }, 400);
+      throw new HttpException({ msg: 'No file provided o' }, 400);
     }
 
     const getFile = await this.storage.uploadFile(file);

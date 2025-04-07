@@ -193,14 +193,14 @@ export function RegisterAfter({
         <div className={clsx('text-[12px]', interClass)}>
           By registering you agree to our{' '}
           <a
-            href={`https://postiz.com/terms`}
+            href={`https://brightbaron.be/terms-of-service`}
             className="underline hover:font-bold"
           >
             Terms of Service
           </a>{' '}
           and{' '}
           <a
-            href={`https://postiz.com/privacy`}
+            href={`https://brightbaron.be/privacy-policy`}
             className="underline hover:font-bold"
           >
             Privacy Policy
